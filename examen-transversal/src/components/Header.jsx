@@ -18,7 +18,9 @@ const Header = () => {
         {/* logo */}
         <div>
           <Link>
-            <img src={logo} height={66} width={66} alt="logo" />
+            <h3 className="h3 capitalize mt-2 mb-1 text-secondary hover:text-tertiary hover:scale-110 transition-all duration-300">
+              Tiendita
+            </h3>
           </Link>
         </div>
         {/* navbar desktop */}
