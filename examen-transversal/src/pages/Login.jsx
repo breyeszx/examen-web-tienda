@@ -3,7 +3,7 @@ import React from "react";
 const Login = () => {
   return (
     <section className="max_padd_cpntainer flexCenter flex-col pt-32">
-      <div className="max-w-[555px] h-[600px] bg-white m-auto px-14 py-10">
+      <div className="max-w-[555px] h-[600px] bg-white m-auto px-14 py-10 ring-1 ring-slate-900">
         <h3 className="h3">Registrate</h3>
         <div className="flex flex-col gap-4 mt-7">
           <input

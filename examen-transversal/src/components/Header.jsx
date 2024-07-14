@@ -17,7 +17,7 @@ const Header = () => {
       <div className="px-4 flexBetween py-3 max-xs:px-2">
         {/* logo */}
         <div>
-          <Link>
+          <Link to={"/"}>
             <h3 className="h3 capitalize mt-2 mb-1 text-secondary hover:text-tertiary hover:scale-110 transition-all duration-300">
               Tiendita
             </h3>
