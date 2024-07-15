@@ -5,6 +5,7 @@ import ProductHeader from "../components/ProductHeader";
 import ProductDisplay from "../components/ProductDisplay.jsx";
 import ProductDescription from "../components/ProductDescription.jsx";
 import RelatedProducts from "../components/RelatedProducts.jsx";
+import { Outlet } from "react-router-dom";
 
 const Product = () => {
   const { all_products } = useContext(ShopContext);

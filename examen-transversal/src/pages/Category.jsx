@@ -1,9 +1,13 @@
 import React from "react";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
-import all_products from "../assets/all_products";
+import { useContext } from "react";
+import { ShopContext } from "../Context/ShopContext";
+import { Outlet } from "react-router-dom"; // Importa Outlet
 import Item from "../components/Item";
 
 const Category = ({ category, banner }) => {
+  const { all_products } = useContext(ShopContext);
+
   return (
     <section className="max_padd_container py-12 xl:py-28">
       <div>
@@ -30,7 +34,7 @@ const Category = ({ category, banner }) => {
                   name={item.name}
                   new_price={item.new_price}
                   old_price={item.old_price}
-                ></Item>
+                />
               );
             }
           })}
@@ -39,6 +43,7 @@ const Category = ({ category, banner }) => {
           <button className="btn_dark_rounded">Cargar mas</button>
         </div>
       </div>
+      <Outlet /> {/* Aquí se renderizan las rutas anidadas */}
     </section>
   );
 };

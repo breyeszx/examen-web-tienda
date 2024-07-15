@@ -64,13 +64,13 @@ const Header = () => {
               <img src={logout} alt="logout" height={18} width={18} />
               Logout
             </NavLink> */}
-            <NavLink
+            {/* <NavLink
               to={"login"}
               className={"btn_secondary_rounded flexCenter gap-x-1 medium-6"}
             >
               <img src={user} alt="logout" height={18} width={18} />
               Login
-            </NavLink>
+            </NavLink> */}
           </div>
         </div>
       </div>
